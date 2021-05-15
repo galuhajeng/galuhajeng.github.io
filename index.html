@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bimble Online</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1 class="judul">Oke Bimble</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Akhir Dari Header -->
+  <!-- Deskripsi Website -->
+
+  <div class="content">
+    <div class="sinopsis">
+      <h1>BIMBEL ONLINE TERPERCAYA</h1>
+      <P>Oke Bimble Adalah Situs Pembelajaran Online Terpercaya dan murah se-Indonesia. Banyak lulusan kita yang berhasil lolos ke kampus ternama. Salah satunya Universitas Indonesia, Institut Teknologi Bandung, Dll.</P>
+      <img src="image/analytics.png" alt="">
+    </div>
+    <!-- Akhir Deskripsi Website -->
+    <!-- Register -->
+
+    <div class="register">
+      <h1>Register</h1>
+	<!-- onsubmit berfungsi saat tombol submit diklik akan menjalankan fungsi validasi dahulu -->
+	<!-- apabila fungsi validasi bernilai true akan membuka halaman hasil.html -->
+	<form action="submit.html" onsubmit="return validasi()" method="POST" id="registrasi">
+		<!-- setiap input dibawahnya ada div sebagai tempat menampilkan teks error -->
+		<label for="nama"> Username : </label>
+		<input type="text" name="nama" id="nama" class="formInput" />
+		<div id="error_nama" class="error"></div>
+
+		<label for="email">Email : </label>
+		<input type="text" name="email" id="email" class="formInput" />
+		<div id="error_email" class="error"></div>
+
+		<label for="tlp">Nomor Telepon : </label>
+		<input type="text" name="tlp" id="tlp"/>
+		<div id="error_tlp" class="error"></div>
+
+		<label for="paket">Pilih Paket : </label>
+		<select name="paket" id="paket">
+			<option value="pilih">--- pilih paket ---</option>
+			<option value="paket1">Paket 1 Tahun</option>
+			<option value="paket2">Paket 2 Semester</option>
+			<option value="paket3">Paket 3 Bulan</option>
+		</select>
+		<div id="error_paket" class="error"></div>
+
+		<label for="konfir">Saya setuju dengan syarat dan ketentuan</label>
+		<input id="konfir" type="checkbox" name="konfir">
+		<div id="error_konfir" class="error"></div>
+
+
+		<button type="submit" form="registrasi">Submit</button>
+      </form>
+    </div>
+  </div>
+  <!-- Akhir Dari Register -->
+  <!-- Content -->
+  <h1 style="text-align: center;">PAKET YANG TERSEDIA</h1>
+  <div class="promo">
+    <div class="paket">
+      <h3>Ultima 1</h3>
+      <p>Paket 3 Bulan</p>
+      <p>UTBK</p>
+      <h3>Rp3.000.000</h3>
+    </div>
+
+    <div class="paket">
+      <h3>Ultima 2</h3>
+      <p>Paket 2 semester</p>
+      <p>INTENSIF UTBK</p>
+      <h3>Rp4.000.000</h3>
+    </div>
+
+    <div class="paket">
+      <h3>Ultima 3</h3>
+      <p>Paket 1 Tahun </p>
+      <p>Online Bimbel Kelas 12 + UTBK</p>
+      <h3>Rp5.000.000</h3>
+    </div>
+  </div>
+    <!-- Akhir Dari Content -->
+    <!-- About Us -->
+  <div class="AboutUs">
+    <h1>About Us</h1>
+    <div class="Matkul">
+      <h3>Oke Bimble</h3>
+      <p>Oke Bimble telah berdiri sejak tahun 2016.</p>
+      <p>Lulusan Oke Bimble banyak di terima di kampus ternama,</p>
+      <p>seperti Universitas Indonesia, ITS, Unair, dan masih banyak lagi.</p>
+    </div>
+  <div class="Copyright">
+    <h3>@2021 Copyright All Right Reserved | Dasar Pemrograman Web_2D</h3>
+  </div>
+  <script src="tes.js"></script>
+</body>
+</html>

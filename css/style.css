@@ -1,0 +1,144 @@
+body {
+    margin: 0px;
+    background-image: url(/image/bg.png);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.733);
+    padding: 0 40px 0 20px;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+    
+}
+
+.header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: salmon;
+    padding: 3px;
+}
+
+/* Akhir Dari Header */
+/* Deskripsi  Website */
+
+.content {
+    display: flex;
+    background-color: #69d2e7;
+    padding: 20px;
+
+}
+
+.sinopsis {
+    max-width: 55%;
+}
+
+.sinopsis img {
+    margin-left: 250px;
+    width: 250px;
+    height: 250px;
+}
+
+.sinopsis h1 {
+    margin: 0px;
+}
+
+/* Akhir Deskripsi  Website */
+
+
+/* Register */
+.register {
+    margin-left: 50px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 50px 20px 70px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+}
+
+label {
+    grid-column: 1 / 2;
+}
+ 
+input, button {
+    grid-column: 2 / 3;
+}
+
+/* Akhir Dari Register */
+
+
+
+/* Content */
+.paket {
+    margin: 0 0 0 15px;
+    width: 240px;
+    border-radius: 10px;
+    background-color: #fff2bc;
+}
+
+.promo {
+    display: flex;
+    justify-content: center;
+}
+
+.promo p {
+    margin: 0px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffe96f;
+}
+
+.promo h3 {
+    margin: 10px 0 0 0;
+    text-align: center;
+    height: 30px;
+}
+
+.harga {
+    width: 350px;
+    text-align: center;
+    margin: 0 0 0 50px;
+    background-color: rgb(110, 223, 223);
+}
+
+/* Akhir Dari Content */
+/*About Us*/
+.AboutUs {
+    background-color: #bdebf4;
+    margin-top: 5px;
+    padding: 5px 0 0 20px;
+}
+.Matkul {
+    margin: 10px;
+}
+.Anggota {
+    margin: 10px;
+    display: inline-block; 
+    text-align: center;
+
+}
+.Copyright {
+    background-color: #333;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.Copyright h3 {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
+
+.error {
+    font-color
+}
